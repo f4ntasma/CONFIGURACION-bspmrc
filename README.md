@@ -1,13 +1,32 @@
-## CONFIGURACIÓN CAMARA
-/ Paso 1 
-# Nos vamos a dirigir a la dirección
-Dirección(screenshots/directorio.png)
+## CONFIGURACIÓN FONDO DE PANTALLA
 
-# Luego de acceder a esa ubicació y haber agregado nuestro nuevo fondo de pantalla haremos que siempre este ese fondo desde que se inicia sesión
-# Para ello entraremos a esta dirección
+### Paso 1  
+Nos vamos a dirigir a la dirección:  
+![Directorio del fondo de pantalla](/screenshots/directorio.png)  
 
-Parte1 (screenshots/parte1.png)
+Luego de acceder a esa ubicación y haber agregado nuestro nuevo fondo de pantalla, haremos que siempre esté presente al iniciar sesión.  
+Para ello entraremos a esta dirección:  
+![Modificación del archivo de configuración](/screenshots/parte1.png)  
 
-# Luego modificaremos el archivo bspwmrc para la imagen actual que queremos
+Luego modificaremos el archivo `bspwmrc` para asignar la imagen deseada:  
+![Edición de bspwmrc](/screenshots/parte2.png)  
 
-Parte2(screenshots/parte2.png)
+---
+
+## SOLUCIÓN TECLADO EN ESPAÑOL
+
+### Paso 1  
+Accedemos a una terminal y editamos el archivo de configuración:  
+```bash
+sudo nano /etc/vconsole.conf
+
+# KEYBOARD CONFIGURATION FILE
+# Consult the keyboard(5) manual page.
+
+KEYMAP=es
+XKBMODEL="pc105"
+XKBLAYOUT="es"
+XKBVARIANT=""
+XKBOPTIONS=""
+BACKSPACE="guess"
+
